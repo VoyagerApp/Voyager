@@ -12,3 +12,18 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+body, html {
+    margin:0;
+    height:100%;
+    padding:0;
+}
+
+#container{
+    height: 100%;
+}
+
+#map {
+    position: relative;
+    height:91%;
+}
