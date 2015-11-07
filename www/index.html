@@ -37,7 +37,7 @@
     <body onload = "initMap()">
         <nav class="navBar">
             <div class="nav-wrapper" class="navBar">
-                <a href="#" class="brand-logo center"><img src="img/redBigLogo.png" id="logo"></a>
+                <a href="#" class="brand-logo center"><img src="img/redLogo.png" id="logo"></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
@@ -48,10 +48,12 @@
 
         <div class="wrapper">
             <div id="map"></div>
-            <form id="depArrFields">
-                <input type="text" name="departFrom" value="Depart From">
-                <input type="text" name="arriveTo" value="Arrive To">
-            </form>
+            <div class="formDiv">
+                <form id="depArrFields">
+                    <input type="text" name="departFrom" value="Depart From">
+                    <input type="text" name="arriveTo" value="Arrive To">
+                </form>
+            </div>
             <!--
             <form id="depArrFields">
                 <input class="validate" type="text" name="departFrom" value="Depart From">

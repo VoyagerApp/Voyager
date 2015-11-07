@@ -7,14 +7,14 @@
  */
 
  #map {
- 	height: 100vh;
+    height: 100vh;
  } 
 
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
 }
 
 body, html {
@@ -30,13 +30,16 @@ body, html {
 }
 
 #map {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
-form{
-	position: relative;
-	margin-top:50px;
+.formDiv{
+    position: absolute;
+    top:125px;
+    left:20px;
+    color:white;
+    background-color: rgba(192, 57, 43, .3);
 }
 
 #depArrFields {
@@ -49,14 +52,14 @@ form{
 }
 
 #logo{
-	height: 64px;
+    height: 64px;
 }
 
 .navBar {
-	background-color: #C0392B;
+    background-color: #C0392B;
 }
 
 #map {
     position: relative;
     height:91%;
-}
+}}
