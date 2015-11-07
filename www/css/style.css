@@ -17,6 +17,10 @@
     font-size: inherit;
 }
 
+::-webkit-input-placeholder {
+   color: white;
+}
+
 body, html {
     margin:0;
     height:100%;

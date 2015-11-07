@@ -41,7 +41,6 @@ function initMap() {
 	      position: position,
 	      map: map
 	    });  
-	    map.panTo(position);
 	}
 
 }
