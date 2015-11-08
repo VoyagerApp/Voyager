@@ -9,6 +9,33 @@
     height: 100vh;
  } 
 
+#navBarforOpening {
+    position: absolute;
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+} 
+
+#firstSlide {
+    height: 100vh;
+    background-image: url("../img/Emirates.jpg");
+    background-size: cover;
+}
+
+#secondSlide {
+    height: 100vh;
+    background-image: url("../img/Emirates3.jpg");
+    background-size: cover;
+}
+
+#thirdSlide {
+    height: 100vh;
+    background-image: url("../img/Emirates2.jpg");
+    background-size: cover;
+}
+
 .icon-block {
   padding: 0 15px;
 }

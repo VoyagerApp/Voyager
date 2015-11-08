@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+         <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.slider').slider({full_width: true});
+            });
+        </script>
+        <title>Voyager</title>
+    </head>
+    <body>
+
+        <div class="navbar-fixed"><nav class="navBar" id="navBarforOpening">
+            <div class="nav-wrapper" class="navBar">
+                <a href="#" class="brand-logo center"><img src="img/redBigLogo.png" id="logo" style="height:50px;"></a>
+                
+            </div>
+        </nav></div>
+
+        <!-- Delete starting here if shit goes wrong -->
+        <div class="slider" id="overallSlider">
+            <ul class="slides" >
+                <li id="firstSlide">
+                    <div class="caption center-align">
+                        <h3>Click Enter to experience Voyager</h3>
+                        <button type="submit" class="btn waves-effect waves-light" name="action"><a href="index.html">Enter</a></button>
+                    </div>
+                </li>
+                <li id="secondSlide">
+                    <div class="caption center-align">
+                        <h3>Voyager is proud to support the Emirates</h3>
+                        <button type="submit" class="btn waves-effect waves-light" name="action"><a href="index.html">Enter</a></button>
+                    </div>
+                </li>
+                <li id="thirdSlide">
+                    <div class="caption center-align">
+                        <h3>Voyager a Revolutionary experience</h3>
+                        <button type="submit" class="btn waves-effect waves-light" name="action"><a href="index.html">Enter</a></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- End of HTML delete -->
+
+         <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+              new WOW().init();
+        </script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

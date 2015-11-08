@@ -32,10 +32,11 @@
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <title>Voyager</title>
 
     </head>
-    <body onload = "initMap()">
+    <body onload="initMap()"> <!-- took out onload = initMap -->
         <div class="navbar-fixed"><nav class="navBar">
             <div class="nav-wrapper" class="navBar">
                 <a href="#" class="brand-logo center"><img src="img/redBigLogo.png" id="logo" style="height:50px;"></a>
@@ -46,6 +47,8 @@
                 </ul>
             </div>
         </nav></div>
+
+        
 
         <div class="wrapper" style="">
             <div id="map"></div>
@@ -64,11 +67,11 @@
                               <input type="date" class="datepicker">
                         </div>
                         <div class="input-field col s6">
-    <select class="browser-default">
-      <option value="1" selected>Economy</option>
-      <option value="2">Buisness</option>
-    </select>
-  </div>
+                            <select class="browser-default">
+                            <option value="1" selected>Economy</option>
+                            <option value="2">Buisness</option>
+                            </select>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -79,7 +82,7 @@
                 <input class="validate" type="text" name="arriveTo" value="Arrive To">
             </form>
             -->
-        </div>
+        
         <!--
         <script type="text/javascript">
         var map;
@@ -247,7 +250,14 @@
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxg7BCH2amIEqEDxz7OZ672p88neejUwI&callback=initMap">
         </script>
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.slider').slider({full_width: true});
+            });
+        </script> -->
+
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
