@@ -58,3 +58,14 @@ function setMapOnAll() {
 
 
 
+function swipeLeft(){
+
+
+}
+
+function swipeRight(){
+	
+}
+
+
+
