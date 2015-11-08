@@ -14,7 +14,9 @@ var markers=[];
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 	    center: {lat: 37.77, lng: -122.42},
-	    zoom: 8
+	    zoom: 8,
+	    disableDefaultUI: true,
+	    zoomControl: true,
 	});
 
 	// Try HTML5 geolocation.
