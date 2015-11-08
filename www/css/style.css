@@ -104,3 +104,61 @@ body, html {
 @media screen and (min-width: 480px) {
 
 }
+
+
+
+
+
+
+
+
+
+#flightClass {
+    background-color: rgba(192,57,43,0.4);
+    height: 46px;
+    display: block;
+    width: 280px;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+#flightClass select {
+    display: block;
+    background-color: rgba(192,57,43,0);
+    border: none;
+    width: 275px;
+}
+
+#flightClass:selection {
+    border: none;
+}
+
+#flightClass2 {
+    background-color: rgba(192,57,43,0.4);
+    margin-bottom: 0px;
+    padding-left: 5px;
+}
+
+#flightClass3 {
+    background-color: rgba(192,57,43,0.4);
+    margin-bottom: 0px;
+    padding-left: 5px;
+}
+
+#flightClass4 {
+    background-color: rgba(192,57,43,0.4);
+    margin-bottom: 0px;
+    padding-left: 5px;
+}
+
+#flightClass5 {
+    background-color: rgba(192,57,43,0.4);
+    margin-bottom: 0px;
+    padding-left: 5px;
+}
+
+.totalFormWidth {
+    margin-top: 45px;
+    max-width: 275px;
+}
+

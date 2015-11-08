@@ -1,8 +1,3 @@
-
-$(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-  });
 (function($){
   $(function(){
 
@@ -11,17 +6,31 @@ $(document).ready(function(){
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-
+var markers = [];
 var map;
-var markers=[];
+var cityAirports = [
+    {
+        name: "San Francisco",
+        airport: "SFO",
+        position: {lat: 37.7739, lng: -122.431}
+    },
+    {
+        name: "Dubai",
+        airport: "DXB",
+        position: {lat: 25.2486, lng: 55.352}
+    },
+    {
+        name: "San Jose",
+        airport: "SJC",
+        position: {lat: 37.363, lng: 121.929}
+    }
+];
 
 
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 	    center: {lat: 37.77, lng: -122.42},
-	    zoom: 8,
-	    disableDefaultUI: true,
-	    zoomControl: true,
+	    zoom: 8
 	});
 
 	// Try HTML5 geolocation.
@@ -38,10 +47,6 @@ function initMap() {
 	else {
 	    // Browser doesn't support Geolocation
 	}
-
-	google.maps.event.addListener(map, 'click', function(e) {
-	    addMarker(e.latLng);
-	});
 }
 
 function addMarker(location) {
@@ -50,56 +55,39 @@ function addMarker(location) {
 	    map: map
 	  });
 	  markers.push(marker);
-	  setMapOnAll();
+	  marker.setMap(map);
 }
 
-function btnaddmarker(){
-	var myLatLng1 = {lat: -25.363, lng: 131.044};
-	var myLatLng2 = {lat: -25.363, lng: 10.044};
-  	var marker1 = new google.maps.Marker({
-	    position: myLatLng1,
+function submitMarker() {
+  	if (markers.length < 2) {
+	  	alert("Drop at least 2 pins");
+	  	return;
+  	}
+
+  	var departureCity;
+  	var arrivalCity;
+  	/*
+  	switch () {
+
+  	}
+
+  	switch () {
+  		
+  	}
+  	*/
+
+	for (var i = 0; i < markers.length - 1; i++) {
+	  var line = new google.maps.Polyline({
+	    path: [
+	        new google.maps.LatLng(markers[i].position.lat(), markers[i].position.lng()),
+	        new google.maps.LatLng(markers[i+1].position.lat(), markers[i+1].position.lng())
+	    ],
+	    strokeColor: "#C0392B",
+	    strokeOpacity: 0.7,
+	    strokeWeight: 1,
+	    geodesic: true,
 	    map: map
-	});
-	var marker2 = new google.maps.Marker({
-	    position: myLatLng2,
-	    map: map
-	});
-
-	markers.push(marker1);
-	markers.push(marker2);
-	setMapOnAll();
+	  });
+	}
 }
-
-function setMapOnAll() {
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-    console.log(markers[i].position.lat);
-  }
-}
-
-
-
-/*
-  map.addListener('center_changed', function() {
-    // 3 seconds after the center of the map has changed, pan back to the
-    // marker.
-    window.setTimeout(function() {
-      map.panTo(marker.getPosition());
-    }, 3000);
-  });
-
-
-function dropFlightPathPins(){
-	var marker = new google.maps.Marker({
-	      position: new google.maps.LatLng(-122.379128, 37.623891),
-	      map: map
-	});
-
-	var marker = new google.maps.Marker({
-	      position: new google.maps.LatLng(55.365705, 25.253398),
-	      map: map
-	});
-
-}
-*/
 
