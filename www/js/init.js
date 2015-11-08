@@ -100,3 +100,13 @@ function submitMarker() {
 	}
 }
 
+
+function swipeLeft(){
+
+
+}
+
+function swipeRight(){
+	
+}
+
