@@ -66,7 +66,7 @@ body, html {
 
 .formDiv{
     position: absolute;
-    top:80px;
+    top:20px;
     left:20px;
     color:black;
 }
@@ -208,11 +208,13 @@ body, html {
 }
 
 #tinderContainer {
-  width: 500px;
+  padding-top: 50px;
   margin: auto !important;
   display: block;
-  height: 500px;
   position: relative;
+  width:70%;
+  max-height: 200%;
+  height:70%;
   list-style-type: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

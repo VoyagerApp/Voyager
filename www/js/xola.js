@@ -1,44 +1,59 @@
-var flights = [];
-var flightsSize = 0;
+var experiences = [];
 
-function destination(flightClass){
+function explore(lat, lng){
 
-    if (destination !== "") {
-        var flightData = {
-            fare: null,
+
+
+    if (explore !== "") {
+        var experience = {
+            price : null,
             duration: null,
-            dTime: null,
-            number: null,
-            layover: null
+            category: null
         };
+
+        var range = 30
+        var limit = 5
+        var urll = 'http://dev.xola.com/api/experiences?geo=' + lat + '%2c' + lng + '&limit=5&sort=price[desc]',
+        
+            // &limit=5&sort=price[desc]
+
         $.ajax({
 
-            url: 'https://ec2-54-77-6-21.eu-west-1.compute.amazonaws.com:8143/flightavailability/1.0/?FlightDate=12%2F12%2F12&Origin=SFO&Destination=DXB&Class=' + flightClass,  
+            url: urll,  
             type: 'GET',
             dataType: 'json',
             headers: {
-                'Authorization':'Bearer 644cd73cc87f5720e9b93eaada4de65', 
+                'Content-type': 'application/json',
+                'X-API-Key':'pp1yvpos00okckkkko', 
+            
             },
-        
+
             success: function(data){
-                 for (var i = 0; i < data.FlightAvailabilityList.length; i++) {
-                     flightData.fare = data.FlightAvailabilityList[i].FlightFare;
-                     flightData.duration = data.FlightAvailabilityList[i].Duration;
-                     flightData.dTime = data.FlightAvailabilityList[i].FlightDateTime;
-                     flightData.number = data.FlightAvailabilityList[i].FlightNo;
-                     flightData.layover = data.FlightAvailabilityList[i].TransitsStations.TransitsStation[0];
-                     flights[i] = flightData;
-                     console.log(flights[i]);
+              
+                console.log(data);
+              /* 
+                alert('success')
+                 for (var i = 0; i < data.length; i++) {
+                     experience.price = data.price;
+                     experience.duration = data.duration;
+                     experience.category = data.category;
+                     experiences[i] = experience;
+                     console.log(experiences[i]);
                 }
-                flightsSize = FlightAvailabilityList.length;
+
+                alert(data);
+           */     
             },
-                 //callback();
-           
+                 
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-             alert('error');
+             alert(XMLHttpRequest + " " + textStatus + " " + errorThrown);
+             alert(urll);
             }
         });
-    }
-    else {}   
-    return true;
 }
+
+       
+        return true;
+}
+
+explore(37.7833,122.4167);
