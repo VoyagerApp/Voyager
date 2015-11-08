@@ -35,18 +35,18 @@
 
     </head>
     <body onload = "initMap()">
-        <nav class="navBar">
+        <div class="navbar-fixed"><nav class="navBar">
             <div class="nav-wrapper" class="navBar">
-                <a href="#" class="brand-logo center"><img src="img/redBigLogo.png" id="logo"></a>
+                <a href="#" class="brand-logo center"><img src="img/redBigLogo.png" id="logo" style="height:50px;"></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                 </ul>
             </div>
-        </nav>
+        </nav></div>
 
-        <div class="wrapper">
+        <div class="wrapper" style="">
             <div id="map"></div>
             <div class="formDiv">
                 <form id="depArrFields">
@@ -72,7 +72,32 @@
                 });
             }
         </script>-->
-        
+        <div class="row" style="padding-top:100vh;">
+        <div class="col s12 white" style="z-index:1000;">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/profile1.jpg">
+              <a href="profile.html" class="card-title" style="font-size:175%;">Philip Johnson<span style="font-size:50% "> Google Intern</span></a>
+            </div>
+            <div class="card-content">
+               <div class="chip">Computers</div><div class="chip">Tech</div><div class="chip">Hackathons</div>
+                <div class="center-align" style="margin-top:10px;"><a class="waves-effect waves-light btn" onclick="Materialize.toast('Booked seat next to Philip', 1000)">Book</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 white">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/profile2.jpg">
+              <a href="profile.html" class="card-title" style="font-size:175%;">George Smith<span style="font-size:50% "> Amazon Manager</span></a>
+            </div>
+            <div class="card-content">
+               <div class="chip">Computers</div><div class="chip">Tech</div><div class="chip">Hackathons</div>
+               <div class="center-align" style="margin-top:10px;"><a class="waves-effect waves-light btn" onclick="Materialize.toast('Booked seat next to George', 1000)">Book</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxg7BCH2amIEqEDxz7OZ672p88neejUwI&callback=initMap">
         </script>
