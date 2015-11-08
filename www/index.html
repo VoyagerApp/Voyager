@@ -74,6 +74,7 @@
                             </select>
                         </div>
                     </div>
+                    <button id="fly" type="submit" class="btn">Fly!</button>
                 </form>
             </div>
         </div>
@@ -223,6 +224,8 @@
 
 
   
+
+  
 <div class="row">
     <div class="col l4 m6 s12">
         <div class="row card" style="margin-top:80vh;">
@@ -234,13 +237,13 @@
     <li id="flight1">
       <div class="collapsible-header flow-text row" style="font-size:105%;line-height:150%;">
         <div class="col s8">
-            <span class="left">Flight#1221</span><br/>
-            <span class="left">Departs: 10:00 AM</span><br/>
-            <span class="left">Duration: 10 Hours</span><br/>
-            <span class="left">Layover: Doha</span><br/>
+            <span id="flight1No" class="left"></span><br/>
+            <span id="flight1Dep" class="left"></span><br/>
+            <span id="flight1Dur" class="left"></span><br/>
+            <span id="flight1Lay" class="left"></span><br/>
         </div>
         <div class="col s4">
-            <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:25%;">$2400</span>
+            <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:25%;">$250</span>
        
         </div>
          <p class="btn col s12 center" >People On Your Flight</p>
@@ -266,13 +269,13 @@
     <li id="flight2">
       <div class="collapsible-header flow-text row" style="font-size:105%;line-height:150%;">
         <div class="col s8">
-            <span class="left">Flight#1431</span><br/>
-            <span class="left">Departs: 4:00 PM</span><br/>
-            <span class="left">Duration: 4 Hours</span><br/>
-            <span class="left">Layover: None</span><br/>
+            <span id="flight2No" class="left"></span><br/>
+            <span id="flight2Dep" class="left"></span><br/>
+            <span id="flight2Dur" class="left"></span><br/>
+            <span id="flight2Lay" class="left"></span><br/>
         </div>
         <div class="col s4">
-            <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:25%;">$600</span>
+            <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:25%;">$300</span>
         </div>
         <p class="btn col s12 center" >People On Your Flight</p>
     </div>
@@ -328,12 +331,12 @@
       </div> -->
 
   <div class="slideInRight animated action-btn hide-on-med-and-up" id="SearchButton">
-    <a class="waves-effect waves-light btn modal-trigger btn-floating btn-large" style="background-color:#2980b9;" href="#modal2">
+    <a class="waves-effect waves-light btn modal-trigger btn-floating btn-large" style="background-color:#2980b9;" href="#modal1">
       <i class="large material-icons">search</i>
     </a>  
   </div>
          
-    <div id="modal2" class="modal">
+    <div id="modal1" class="modal">
     <div class="modal-content">
      
                 <form class="totalFormWidth" style="margin-left:10vw;">
