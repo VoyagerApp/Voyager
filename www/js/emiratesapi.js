@@ -1,7 +1,24 @@
+alert('test');
+
 var flights = [];
 var flightsSize = 0;
 ​
-​
+// ​$.ajax({
+//         url: 'https://dev.xola.com/api/experiences',
+//         beforeSend: function(xhr) {
+//              xhr.setRequestHeader("X-API-KEY", "hBehcieqIALQKz-dAUWL4fQ1CsGE67N9hh_9WV53z48")
+//              xhr.setRequestHeader("Content-type", "application/json")
+//         }, success: function(data){
+//             alert(data);
+//             //process the JSON data etc
+//         },
+//                  //callback();
+                 
+//             error: function (XMLHttpRequest, textStatus, errorThrown) {
+//              alert('error');
+//             }
+// });
+
 function destination(flightClass){
 ​
     if (destination !== "") {
