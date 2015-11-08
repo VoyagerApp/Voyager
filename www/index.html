@@ -46,8 +46,8 @@
             </div>
         </nav></div>
 
-        <div class="wrapper" style="">
-            <div id="map"></div>
+        <div class="wrapper" style="position:fixed">
+            <div id="map" ></div>
             <div class="formDiv hide-on-small-only">
                 <form id="depArrFields">
                     <div class="formRow">
@@ -93,7 +93,10 @@
 <!-- ******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** ABOVE IS THE DESKTOP VIEW AND BELOW IS THE MOBILE VIEW. EDIT ACCORDINGLY *************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** -->
 
 
-        <div class="row" style="padding-top:100vh;">
+        <div class="row card" style="margin-top:80vh;">
+         <div class="col s12 white-text" style="height:20vh; background-color:#c0392b;">
+                <h2 class="flow-text center-align">Title</h2>
+        </div>
         <div class="col s12 white" style="z-index:1000;">
           <div class="card">
             <div class="card-image">
@@ -120,8 +123,8 @@
         </div>
       </div>
 
-  <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 12px; right: 12px;">
-    <a class="waves-effect waves-light btn modal-trigger btn-floating btn-large red" href="#modal1">
+  <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 6.5vh; right: 2.5vh;">
+    <a class="waves-effect waves-light btn modal-trigger btn-floating btn-large" style="background-color:#2980b9;" href="#modal1">
       <i class="large material-icons">search</i>
     </a>  
   </div>
@@ -138,7 +141,7 @@
                         <input  type="text" name="arriveTo" placeholder="Arrive To" value="">
                         <img src="img/calendar-icon.png" height="45" width="45" class="calendarIcon">
                     </div>
-         <!--            <button type="button" id="submitButton" class="btn" onclick="btnaddmarker()">Submit</button> -->
+         <!--            <button type="button" id="submitButton" class="btn" onclick="btnaddma#2980b9rker()">Submit</button> -->
                 </form>
             </div>
     </div>
