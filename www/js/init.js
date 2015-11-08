@@ -66,7 +66,6 @@ function btnaddmarker(){
 function setMapOnAll() {
   for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(map);
-    alert(markers[i]);
     console.log(markers[i].position.lat);
   }
 }
