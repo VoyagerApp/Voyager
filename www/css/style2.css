@@ -51,17 +51,19 @@ body, html {
     height:91%;
 }
 
-div #swipeBox{
+#modal1{
+    background-color: rgba(192,57,43,0.8);
+    max-height:1000vh;
+    height:91vh;
+    z-index:2000;
+    color:white;
+}
+
+#modal1Footer{
+    background-color: inherit;
     position: absolute;
-    background-color: rgba(255, 255, 204,0.8);
-    display: table;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    margin-top: 10%;
-    margin-left:12.5%;
-    height: 65%;
-    width:75%;
-    z-index: 10;
+    bottom: 0px;
+    right:0px;
 }
 
 @media screen and (min-width: 480px) {
