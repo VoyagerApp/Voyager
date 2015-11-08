@@ -50,9 +50,15 @@
             <div id="map"></div>
             <div class="formDiv">
                 <form id="depArrFields">
-                    <input id="input1" type="text" name="departFrom" placeholder="Depart From" value="">
-                    <input id="input2" type="text" name="arriveTo" placeholder="Arrive To">
-                    <button type="button" onclick="btnaddmarker()">Submit</button>
+                    <div class="formRow">
+                        <input id="input1" type="text" name="departFrom" placeholder="Depart From" value="">
+                        <img src="img/calendar-icon.png" height="45"  width="45" class="calendarIcon">
+                    </div>
+                    <div class="formRow">
+                        <input id="input2" type="text" name="arriveTo" placeholder="Arrive To" value="">
+                        <img src="img/calendar-icon.png" height="45" width="45" class="calendarIcon">
+                    </div>
+                    <button type="button" id="submitButton" onclick="btnaddmarker()">Submit</button>
                 </form>
             </div>
             <!--
@@ -77,7 +83,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxg7BCH2amIEqEDxz7OZ672p88neejUwI&callback=initMap">
         </script>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="../../bin/materialize.js"></script>
+        <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
