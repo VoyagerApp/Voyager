@@ -1,3 +1,8 @@
+
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
 (function($){
   $(function(){
 
@@ -14,7 +19,8 @@ var markers=[];
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 	    center: {lat: 37.77, lng: -122.42},
-	    zoom: 8
+	    zoom: 8,
+	    disableDefaultUI: true
 	});
 
 	// Try HTML5 geolocation.

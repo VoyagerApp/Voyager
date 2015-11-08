@@ -48,7 +48,7 @@
 
         <div class="wrapper" style="">
             <div id="map"></div>
-            <div class="formDiv">
+            <div class="formDiv hide-on-small-only">
                 <form id="depArrFields">
                     <div class="formRow">
                         <input id="input1" type="text" name="departFrom" placeholder="Depart From" value="">
@@ -58,9 +58,16 @@
                         <input id="input2" type="text" name="arriveTo" placeholder="Arrive To" value="">
                         <img src="img/calendar-icon.png" height="45" width="45" class="calendarIcon">
                     </div>
+                    <div class="formRow">
+                        <select class="browser-default" id="input3">
+                            <option value="">Economy Class</option>
+                            <option value="">Business Class</option>
+                            <option value="">First Class/Premiere Class</option>
+                        </select>
+
+                    </div>
                     <button type="button" id="submitButton" onclick="btnaddmarker()">Submit</button>
                 </form>
-            </div>
             <!--
             <form id="depArrFields">
                 <input class="validate" type="text" name="departFrom" value="Depart From">
@@ -104,6 +111,34 @@
           </div>
         </div>
       </div>
+
+  <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 12px; right: 12px;">
+    <a class="waves-effect waves-light btn modal-trigger btn-floating btn-large red" href="#modal1">
+      <i class="large material-icons">search</i>
+    </a>  
+  </div>
+         
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="">
+                <form id="">
+                    <div class="">
+                        <input type="text" name="departFrom" placeholder="Depart From" value="">
+                        <img src="img/calendar-icon.png" height="45"  width="45" class="calendarIcon">
+                    </div>
+                    <div class="formRow">
+                        <input  type="text" name="arriveTo" placeholder="Arrive To" value="">
+                        <img src="img/calendar-icon.png" height="45" width="45" class="calendarIcon">
+                    </div>
+         <!--            <button type="button" id="submitButton" class="btn" onclick="btnaddmarker()">Submit</button> -->
+                </form>
+            </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat left">Cancel</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+  </div>
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxg7BCH2amIEqEDxz7OZ672p88neejUwI&callback=initMap">
         </script>
