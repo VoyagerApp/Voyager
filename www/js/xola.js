@@ -108,6 +108,7 @@ function xola(id){
             
             success: function(data){
                  console.log(data.desc);
+                  $('#adventureDesc' + (id+1)).html(data.desc);
             },
                  //callback();
                  
