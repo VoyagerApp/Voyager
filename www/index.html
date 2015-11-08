@@ -47,29 +47,25 @@
             </div>
         </nav></div>
 
-        <div class="wrapper" style="position:fixed">
-            <div id="map" ></div>
-            <div class="formDiv hide-on-small-only">
-                <form id="depArrFields">
-                    <div class="formRow">
-                        <input id="input1" type="text" name="departFrom" placeholder="Depart From" value="">
-                        <img src="img/calendar-icon.png" height="45"  width="45" class="calendarIcon">
-                    </div>
-                    <div class="formRow">
-                        <input id="input2" type="text" name="arriveTo" placeholder="Arrive To" value="">
-                        <img src="img/calendar-icon.png" height="45" width="45" class="calendarIcon">
-                    </div>
-                    <div class="formRow">
-                        <select class="browser-default" id="input3">
-                            <option value="">Economy Class</option>
-                            <option value="">Business Class</option>
-                            <option value="">First Class/Premiere Class</option>
+        <div class="wrapper" style="">
+            <div id="map"></div>
+            <div class="formDiv">
+                <form class="totalFormWidth">
+                     <input placeholder="Departure" id="flightClass5" type="text" class="validate">
+                    <input type="date" class="datepicker" id="flightClass3">
+                     <input placeholder="Arrival" id="flightClass4" type="text" class="validate">
+                    <input type="date" class="datepicker" id="flightClass2">
+                    <div class="input-field col s12" id="flightClass">
+                        <select >
+                            <option value="1">Economy Class</option>
+                            <option value="2">Business Class</option>
+                            <option value="3">First Class</option>
                         </select>
-
                     </div>
-                    <button type="button" id="submitButton" onclick="btnaddmarker()">Submit</button>
+                    
                 </form>
             </div>
+        </div>
             <!--
             <form id="depArrFields">
                 <input class="validate" type="text" name="departFrom" value="Depart From">
