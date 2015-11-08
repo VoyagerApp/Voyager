@@ -5,9 +5,6 @@
  *
  * Made By MaterializeCSS.com
  */
-body {
-    overflow:hidden;
-}
  #map {
     height: 100vh;
  } 
