@@ -51,7 +51,7 @@
 
         
 
-        <div class="wrapper" style="">
+        <div class="wrapper" style="position:fixed;">
           <!-- Modal Structure -->
           <div id="modal1" class="modal bottom-sheet">
             <div class="modal-content">
@@ -119,7 +119,10 @@
 <!-- ******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** ABOVE IS THE DESKTOP VIEW AND BELOW IS THE MOBILE VIEW. EDIT ACCORDINGLY *************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** -->
 
 
-        <div class="row card" style="margin-top:-20vh;">
+  
+<div class="row">
+    <div class="col l4 m6 s12">
+        <div class="row card" style="margin-top:80vh;">
          <div class="col s12 white-text" style="height:11vh; background-color:#c0392b;">
                 <h2 class="flow-text center-align">Flight Info</h2>
         </div>
@@ -135,11 +138,13 @@
         </div>
         <div class="col s4">
             <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:25%;">$2400</span>
+       
         </div>
+         <p class="btn col s12 center" >People On Your Flight</p>
     </div>
-      <div class="collapsible-body"><p class="center flow-text" style="line-height:0px;height:20%; margin-top:-10%;">People On Your Flight</p><div style="z-index:1000;">
-          <div class="">
-            <div class="card-image">
+      <div class="collapsible-body"><div style="z-index:1000;">
+          <div class="row">
+            <div class="s12 m4 card-image">
               <img src="img/profile1.jpg">
               <a href="#" class="card-title" style="font-size:175%;">Philip Johnson<span style="font-size:50% "> Google Intern</span></a>
             </div>
@@ -150,20 +155,8 @@
           </div>
         </div>
 
-
-        <div style="z-index:1000;">
-          <div class="">
-            <div class="card-image">
-              <img src="img/profile1.jpg">
-              <a href="#" class="card-title" style="font-size:175%;">Philip Johnson<span style="font-size:50% "> Google Intern</span></a>
-            </div>
-            <div class="card-content">
-               <div class="chip">Computers</div><div class="chip">Tech</div><div class="chip">Hackathons</div>
-                <div class="center-align" style="margin-top:10px;"><a class="waves-effect waves-light btn" onclick="Materialize.toast('Booked seat next to Philip', 1000)">Book</a></div>
-            </div>
-          </div>
-        </div>
-
+ 
+        
         </div>
     </li>
 
@@ -178,6 +171,7 @@
         <div class="col s4">
             <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:25%;">$600</span>
         </div>
+        <p class="btn col s12 center" >People On Your Flight</p>
     </div>
       <div class="collapsible-body"><div style="z-index:1000;">
           <div class="card">
@@ -197,6 +191,8 @@
   </ul>
         </div>          
       </div>
+    </div>
+</div>
 <!-- 
       <div class="row card" style="margin-top:-20vh;">
          <div class="col s12 white-text" style="height:11vh; background-color:#c0392b;">

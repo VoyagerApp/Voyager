@@ -135,9 +135,9 @@ body, html {
 #SearchButton{
     /*background-color: rgba(192,57,43,0.4);*/
     position: absolute;
-    bottom: 2.3vh;
+    bottom: 7.5vh;
     float:right;
-    right:12px;
+    right:15px;
 }
 
 
