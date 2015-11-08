@@ -41,7 +41,7 @@ body, html {
     position: absolute;
     top:80px;
     left:20px;
-    color:white;
+    color:black;
 }
 
 #depArrFields {
@@ -114,7 +114,7 @@ body, html {
 
 
 #flightClass {
-    background-color: rgba(192,57,43,0.4);
+    /*background-color: rgba(192,57,43,0.4);*/
     height: 46px;
     display: block;
     width: 280px;
@@ -124,7 +124,7 @@ body, html {
 
 #flightClass select {
     display: block;
-    background-color: rgba(192,57,43,0);
+    /*background-color: rgba(192,57,43,0);*/
     border: none;
     width: 275px;
 }
@@ -134,25 +134,25 @@ body, html {
 }
 
 #flightClass2 {
-    background-color: rgba(192,57,43,0.4);
+    /*background-color: rgba(192,57,43,0.4);*/
     margin-bottom: 0px;
     padding-left: 5px;
 }
 
 #flightClass3 {
-    background-color: rgba(192,57,43,0.4);
+    /*background-color: rgba(192,57,43,0.4);*/
     margin-bottom: 0px;
     padding-left: 5px;
 }
 
 #flightClass4 {
-    background-color: rgba(192,57,43,0.4);
+    /*background-color: rgba(192,57,43,0.4);*/
     margin-bottom: 0px;
     padding-left: 5px;
 }
 
 #flightClass5 {
-    background-color: rgba(192,57,43,0.4);
+    /*background-color: rgba(192,57,43,0.4);*/
     margin-bottom: 0px;
     padding-left: 5px;
 }

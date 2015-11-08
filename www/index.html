@@ -50,19 +50,26 @@
         <div class="wrapper" style="">
             <div id="map"></div>
             <div class="formDiv">
-                <form class="totalFormWidth">
-                     <input placeholder="Departure" id="flightClass5" type="text" class="validate">
-                    <input type="date" class="datepicker" id="flightClass3">
-                     <input placeholder="Arrival" id="flightClass4" type="text" class="validate">
-                    <input type="date" class="datepicker" id="flightClass2">
-                    <div class="input-field col s12" id="flightClass">
-                        <select >
-                            <option value="1">Economy Class</option>
-                            <option value="2">Business Class</option>
-                            <option value="3">First Class</option>
-                        </select>
+                <form class="totalFormWidth card hide-on-small-only">
+                     <div class="row">
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Departure</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Arrival</label>
+                        </div>
+                        <div class="col s6">
+                              <input type="date" class="datepicker">
+                        </div>
+                        <div class="input-field col s6">
+    <select class="browser-default">
+      <option value="1" selected>Economy</option>
+      <option value="2">Buisness</option>
+    </select>
+  </div>
                     </div>
-                    
                 </form>
             </div>
         </div>
@@ -90,7 +97,31 @@
 <!-- ******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** ABOVE IS THE DESKTOP VIEW AND BELOW IS THE MOBILE VIEW. EDIT ACCORDINGLY *************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** -->
 
 
-        <div class="row card" style="margin-top:80vh;">
+        <div class="row card" style="margin-top:-20vh;">
+         <div class="col s12 white-text" style="height:11vh; background-color:#c0392b;">
+                <h2 class="flow-text center-align">Flight Info</h2>
+        </div>
+        <div class="col s12 white" style="z-index:1000;">
+            <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header flow-text row" style="font-size:105%;line-height:150%;">
+        <div class="col s8">
+            <span class="left">Flight#1221</span><br/>
+            <span class="left">Departs: 10:00 AM</span><br/>
+            <span class="left">Duration: 10 Hours</span><br/>
+            <span class="left">Layover: Doha</span><br/>
+        </div>
+        <div class="col s4">
+            <span class="right green-text text-lighten-1" style="font-size:200%; margin-top:50%;">$400</span>
+        </div>
+    </div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+        </div>          
+      </div>
+<!-- 
+      <div class="row card" style="margin-top:-20vh;">
          <div class="col s12 white-text" style="height:11vh; background-color:#c0392b;">
                 <h2 class="flow-text center-align">Passengers</h2>
         </div>
@@ -118,7 +149,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
   <div class="fixed-action-btn hide-on-med-and-up" id="SearchButton" style="bottom: 6.5vh; right: 2vh;">
     <a class="waves-effect waves-light btn modal-trigger btn-floating btn-large" style="background-color:#2980b9;" href="#modal1">
@@ -128,19 +159,28 @@
          
     <div id="modal1" class="modal">
     <div class="modal-content">
-      <div class="">
-                <form id="">
-                    <div class="">
-                        <input type="text" name="departFrom" placeholder="Depart From" value="">
-                        <img src="img/calendar-icon.png" height="45"  width="45" class="calendarIcon">
+     
+                <form class="totalFormWidth" style="margin-left:10vw;">
+                     <div class="row">
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Departure</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Arrival</label>
+                        </div>
+                        <div class="col s6">
+                              <input type="date" class="datepicker">
+                        </div>
+                        <div class="input-field col s6">
+    <select class="browser-default">
+      <option value="1" selected>Economy</option>
+      <option value="2">Buisness</option>
+    </select>
+  </div>
                     </div>
-                    <div class="formRow">
-                        <input  type="text" name="arriveTo" placeholder="Arrive To" value="">
-                        <img src="img/calendar-icon.png" height="45" width="45" class="calendarIcon">
-                    </div>
-         <!--            <button type="button" id="submitButton" class="btn" onclick="btnaddma#2980b9rker()">Submit</button> -->
                 </form>
-            </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat left">Cancel</a>
